@@ -80,7 +80,7 @@ const Portfolio = () => {
       title: " Leave Application",
       description: "Leave Application is a full-stack web application designed to automate leave management, featuring user authentication, leave request handling, approval workflows, and real-time status tracking to improve organizational efficiency.",
       technologies: ["React", "Node.js", "Express", "MongoDB"],
-      github: "https://github.com/Dhanesh-Sathe/EduTrack",
+      github: "https://github.com/Dhanesh-Sathe/Leave-Application.git",
       live: "#"
     },
     {
