@@ -49,9 +49,37 @@ const Portfolio = () => {
 
   const projects = [
     {
+      title: " Hacify:  Continuous Innovation & Weekly Hackathon Platform",
+      description: "Hackify is a full-stack web application that facilitates weekly hackathons, allowing users to solve real-world problems, track performance, and receive mentor feedback. The platform focuses on skill development, progress tracking, and collaborative learning.",
+      technologies: ["React", "Django", "SQLite", "TailwindCSS"],
+      github: "https://github.com/Dhanesh-Sathe/Hackify-Project.git",
+      live: "#"
+    },
+    {
+      title: " Read-To-Listen: Multilingual eBook-to-Audio Converter",
+      description: "Read-To-Listen is a full-stack application that converts PDFs into audio using layout-aware text extraction, IndicTrans2 for translation, and AI4Bharat’s Indic-TTS for speech synthesis. Designed with a privacy-first approach, it processes documents locally while supporting multilingual accessibility.",
+      technologies: ["React", "Django", "TailwindCSS"],
+      github: "https://github.com/Dhanesh-Sathe/frontend_new.git",
+      live: "#"
+    },
+    {
+      title: " Fintech:  Financial News Sentiment Analyzer",
+      description: "Fintech is a full-stack application combining React, Django, and machine learning to analyze financial news sentiment. It features REST APIs, real-time data processing, and an ML-based classification system to detect positive or negative market trends.",
+      technologies: ["React", "Django", "Postgre SQL", "TailwindCSS"],
+      github: "https://github.com/Dhanesh-Sathe/Fintech-Frontend",
+      live: "#"
+    },
+    {
       title: " EduTrack: Personalized AI Learning Platform",
       description: "Developed an AI-driven, full-stack STEM learning platform (React.js/Django) featuring a custom AI content generator and dual-dashboards for personalized education and progress tracking.",
       technologies: ["React", "Django", "Postgre SQL"],
+      github: "https://github.com/Dhanesh-Sathe/EduTrack",
+      live: "#"
+    },
+    {
+      title: " Leave Application",
+      description: "Leave Application is a full-stack web application designed to automate leave management, featuring user authentication, leave request handling, approval workflows, and real-time status tracking to improve organizational efficiency.",
+      technologies: ["React", "Node.js", "Express", "MongoDB"],
       github: "https://github.com/Dhanesh-Sathe/EduTrack",
       live: "#"
     },
@@ -66,10 +94,19 @@ const Portfolio = () => {
 
   const experiences = [
     {
+      title: "Software Quality Engineer Intern",
+      company: "Cytel",
+      location: "Pune",
+      duration: "Jan 2026 - Present",
+      description: "Worked as a Software Quality Engineer Intern, developing scalable API automation frameworks using Karate and Playwright. Automated 200+ test cases, built custom validation utilities, and integrated testing into CI/CD pipelines to ensure reliable, high-quality backend systems and faster release cycles.",
+      technologies: ["Karate Labs", "Playwright", "Javascript", "TestRail", "Node.js", "Gherkin", "BitBucket", "Jira"],
+      type: "internship"
+    },
+    {
       title: "Web Application Developer Intern",
       company: "Rise4Change",
       location: "USA",
-      duration: "Mar 2025 - Present",
+      duration: "Mar 2025 - Dec 2025",
       description: "During my internship, I was a key contributor to the project, where I build and implement features for a scalable backend using Django and its REST framework. I collaborated and contributed to the React frontend to ensure seamless API integration, which played a vital role in the project's successful",
       technologies: ["Django", "PostgreSQL", "REST", "Python", "React.js", "TypeScript", "HTML", "Tailwind CSS", "Git"],
       type: "internship"
