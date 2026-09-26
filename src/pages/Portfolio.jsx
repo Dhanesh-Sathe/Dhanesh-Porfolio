@@ -2,7 +2,6 @@ import React, { useEffect, useMemo, useState } from "react";
 import {
   ArrowDownRight,
   ArrowRight,
-  Award,
   Check,
   CheckCircle2,
   ChevronRight,
@@ -19,9 +18,6 @@ import {
   Phone,
   Rocket,
   ShieldCheck,
-  Sparkles,
-  Target,
-  Users,
   X,
   Zap,
 } from "lucide-react";
