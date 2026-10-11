@@ -1,0 +1,17 @@
+Work Done for Firuya:
+Content updatation and UI/UX Mordenization
+Resume the serviecs like login and sign-up which was broken and build the costomer contact process soomthly
+
+Work done for True Pencil: 
+Gather the requirments according to problem statment
+Design the database architecture according to it and build the scalble backend system.
+Developed backend components for a keystroke-dynamics-based plagiarism detection system using Python.
+Developed and tested statistical and machine learning models for keystroke analysis, pattern recognition, plagiarism detection, and anomaly detection.
+Designed database components andbuilt React frontend components integrated with backend systems, contributing acrossdevelopment, testing, integration, and deployment.
+
+Work done for Talent Bridge Solution:
+I have build the linkedin presence for company and handling it.
+Then provding the design work for the Certificates for the Interns
+Build the Email system for the company which can be allocated to each and every employee as it gets onboarded.
+Providing the marketing stragegy for company to reach out with multiple students.
+Build the google presence of the company and maintaining it.

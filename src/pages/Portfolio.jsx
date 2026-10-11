@@ -18,9 +18,9 @@ const path = [
   ["Test", "Checked like a customer"], ["Launch", "Live and handed over"], ["Grow", "Updates and support"],
 ];
 
-const trusted = ["Firuya", "True Pencil", "Talent Bridge Solution", "Cytel", "R4C Tech", "TensorBuilds"];
+const trusted = ["Firuya", "True Pencil", "Talent Bridge Solution"];
 
-const stats = [[3, "", "businesses I've worked with"], [4, "", "website ideas designed for local businesses"], [500, "+", "registrations supported"], [200, "+", "automated checks protecting every release"]];
+const stats = [[3, "", "businesses I've worked with"], [4, "", "website ideas designed for local businesses"]];
 
 const problems = [
   ["Your website looks outdated", "Visitors judge a business in seconds. An old design sends them away before they read a word."],
@@ -39,9 +39,9 @@ const pillars = [
 const funnel = [["Searches", "Finds your business"], ["Lands", "Your site opens fast"], ["Understands", "Knows what you offer in seconds"], ["Trusts", "Sees a clear, professional site"], ["Contacts you", "Taps call or WhatsApp"]];
 
 const work = [
-  { name: "Firuya.com", kind: "Ongoing client website", needed: "A business website kept fresh, fast, and looking right.", did: ["Regular website updates", "New content and pages", "Front-end improvements", "Technical support"], link: "https://firuya.com/", cta: "Visit the website", color: "#6B5BD2" },
-  { name: "True Pencil", kind: "Live product", needed: "Real features built from the team's requirements, with users in mind.", did: ["Built product features", "Turned requirements into screens", "User-focused front-end work", "Product support"], link: "http://truepencil.com/", cta: "View the product", color: "#2F8FCB" },
-  { name: "Talent Bridge Solution", kind: "Business and digital support", needed: "A professional online presence to help a recruitment business grow.", did: ["Website and UI work", "Google Business and LinkedIn setup", "Business communication assets", "Recruitment market research"], link: null, cta: "Ask about a similar project", color: "#2E9966" },
+  { name: "Firuya.com", kind: "Website modernization and customer journey", needed: "The site needed a more modern experience, reliable account access, and a smoother way for customers to get in touch.", did: ["Content and UI/UX modernization", "Restored login and sign-up services", "Improved the customer contact flow"], image: "/Images/Firuya.jpeg", imageAlt: "Firuya travel website homepage showing its navigation and India Tours banner.", link: "https://firuya.com/", cta: "Visit the website", color: "#6B5BD2" },
+  { name: "True Pencil", kind: "Product engineering contribution", needed: "Contributed to a keystroke-dynamics-based plagiarism detection system for educators.", did: ["Requirements gathering and database design", "Python backend components", "Statistical and machine-learning model development and testing", "React frontend integration", "Testing, integration, and deployment support"], image: "/Images/True%20Pencil.jpeg", imageAlt: "True Pencil product page describing keystroke replay and writing timelines for educators.", link: "http://truepencil.com/", cta: "View the product", color: "#2F8FCB" },
+  { name: "Talent Bridge Solution", kind: "Digital presence and team operations", needed: "Helped strengthen the company's visibility and support its intern and employee onboarding processes.", did: ["Built and manage the company's LinkedIn presence", "Set up and maintain its Google presence", "Designed intern certificates", "Created employee email onboarding setup", "Developed student outreach marketing strategy"], link: null, cta: "Ask about a similar project", color: "#2E9966" },
 ];
 
 const concepts = [
@@ -305,11 +305,11 @@ export default function App() {
 
         {/* STATS */}
         <section className="bg-[#FFB300]">
-          <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-5 py-10 md:grid-cols-4">
+          <div className="mx-auto grid max-w-4xl grid-cols-2 divide-x divide-[#14241F]/25 px-4 py-9 sm:px-8 sm:py-12">
             {stats.map(([n, suffix, label]) => (
-              <div key={label}>
-                <div className="display text-5xl font-extrabold"><Count to={n} suffix={suffix} /></div>
-                <div className="mt-1 max-w-[190px] text-sm font-medium leading-5">{label}</div>
+              <div key={label} className="flex flex-col items-center px-3 text-center sm:px-8">
+                <div className="display text-4xl font-extrabold sm:text-5xl"><Count to={n} suffix={suffix} /></div>
+                <div className="mt-2 max-w-[190px] text-sm font-medium leading-5">{label}</div>
               </div>
             ))}
           </div>
@@ -371,19 +371,19 @@ export default function App() {
         {/* WORK */}
         <section id="work" className="bg-[#0F3D3A] px-5 py-24 text-white">
           <div className="mx-auto max-w-6xl">
-            <Reveal><h2 className={`${h2} max-w-3xl`}>Projects I've worked on with real businesses</h2></Reveal>
+            <Reveal><h2 className={`${h2} max-w-3xl`}>Selected projects with real businesses</h2></Reveal>
             <p className="mt-5 max-w-xl text-lg leading-8 text-white/75">For each one: what the business needed, and what I did about it.</p>
             <div className="mt-12 grid gap-6 lg:grid-cols-3">
               {work.map((w, i) => (
                 <Reveal key={w.name} delay={i * 120}>
                   <article className="group flex h-full flex-col overflow-hidden rounded-2xl bg-[#F3F5EE] text-[#14241F] transition duration-300 hover:-translate-y-2 hover:shadow-[8px_8px_0_#FFB300]">
-                    <Mock color={w.color} title={w.name} />
+                    {w.image ? <img src={w.image} alt={w.imageAlt} loading="lazy" decoding="async" className="aspect-video w-full bg-[#F3F5EE] object-cover object-top" /> : <Mock color={w.color} title={w.name} />}
                     <div className="flex flex-1 flex-col p-6">
                       <p className="text-sm font-bold text-[#0F3D3A]">{w.kind}</p>
                       <h3 className="display mt-1 text-2xl font-extrabold">{w.name}</h3>
                       <p className="mt-4 text-sm font-bold">What they needed</p>
                       <p className="mt-1 text-sm leading-6 text-[#14241F]/75">{w.needed}</p>
-                      <p className="mt-4 text-sm font-bold">What I did</p>
+                      <p className="mt-4 text-sm font-bold">My contribution</p>
                       <ul className="mt-2 flex flex-wrap gap-2">{w.did.map((d) => <li key={d} className="rounded-full bg-[#14241F]/10 px-3 py-1 text-xs font-medium">{d}</li>)}</ul>
                       {w.link ? <a href={w.link} target="_blank" rel="noreferrer" className="mt-auto inline-flex items-center gap-1.5 pt-6 text-sm font-bold underline underline-offset-4">{w.cta} <ArrowUpRight className="h-4 w-4" /></a>
                         : <button onClick={() => go("contact")} className="mt-auto pt-6 text-left text-sm font-bold underline underline-offset-4">{w.cta}</button>}
